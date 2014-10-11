@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>chrisparnin.me</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+		
+		<link rel="shortcut icon" href="img/liangdong.jpg"/>
+
+
+		<script src="js/knockout.js"></script>
+
+		<script src="js/d3.js"></script>
+
+
+	</head>
+
+	<body>
+
+   	<div class="container">
+	      <div class="page-header" id="banner">
+	      	<div class="row">
+	         	<div class="col-lg-6 col-md-6 col-sm-4">
+	         		<h1>Dr. Christopher J Parnin</h1>
+						<p class="lead">Building the software of tomorrow.</p>
+						<a href="http://www.csc.ncsu.edu/"><img src="img/NCSU.png"></img></a>
+
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<img src="img/liangdong.jpg"></img>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-2">
+						<h5>Assistant Professor</h5>
+						<p>Office: Engineering Building II, Room 3270</p>
+						<p><code>cjparnin@ncsu.edu</code></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row  ">
+				<div class="col-lg-10 col-lg-offset-1 col-sm-8 col-sm-offset-2" >
+					<div class=" well">
+						<p class="text-info lead">I am <strong>actively</strong> recruiting students interested in any research projects listed below.</p>
+						<!--<p><a class="btn btn-primary btn-lg">Learn more</a></p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Featured Articles</h2>
+
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<img src="img/eye-rounded.png"></img>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<a class="lead text-primary" href="http://blog.ninlabs.com/2013/01/programmer-interrupted/">Programmer, Interrupted</a>
+						<p>
+						I’m writing this post in an apt state: low-sleep, busy, disorientated, and interrupted. I try all the remedies: Pomodoro, working in coffee shops, headphones, and avoiding work until being distraction free in the late night.
+						But it is only so long before interruption finds a way to pierce my protective bubble…
+						</p>
+					</div>
+				</div>
+
+				<div class="row top-buffer">
+					<div class="col-md-2 col-sm-2">
+						<img src="img/brain-rounded.png"></img>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<a class="lead text-primary" href="http://www.huffingtonpost.com/chris-parnin/scientists-begin-looking-_b_4829981.html">Scientists Begin Looking at Programmers' Brains: <small>The Neuroscience of Programming</small></a>
+						<p>Scientists are finding that there may be a deeper connection between programming languages and other languages then previously thought. Brain-imaging techniques, such as fMRI allow scientists to compare and contrast different cognitive tasks…</p>
+					</div>
+				</div>
+
+				<div class="row top-buffer">
+					<div class="col-md-2 col-sm-2">
+						<img src="img/robo.png"></img>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<a class="lead text-primary" href="http://blog.ninlabs.com/2013/12/software-engineering-the-next-50-years/">Software Engineering: The Next 50 Years</a>
+						<p>TL;DR This post will speculate on possible directions and the challenges faced by the research and software engineering community that needs to start now in order to be relevant tomorrow. Read on for brains, massive engineering, and potty-training your programs…</p>
+					</div>
+				</div>
+
+		</div>
+
+		<div class="container">
+			<h2>Current Projects</h2>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-3">
+					<a href="./crowd-eco/">
+						<h4>Crowd Ecosystems</h4>
+					</a>
+					<p>Examines how mediums such as Stack Overflow, github, and blog posts enable a crowd of developers 
+						to more effectively create software.  Build tools that can analyze, visualize, and harness crowd's effort.
+					</p>
+
+					<div class="hidden-lg hidden-md">
+						<a href="./crowd-eco/">MORE</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-3">
+					<a href="./devops">
+						<h4>Dev Ops</h4>
+					</a>
+					<p>
+						Examines how software organizations can automate software engineering processes.  Build tools that can analyze, refactor, test, deploy, and monitor complex software.
+					</p>
+
+					<div class="hidden-lg hidden-md">
+						<a href="./devops">MORE</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-3">
+					<a href="./alt-code/">
+						<img style="padding-top:3px;padding-bottom:7px;" src="img/alt-code-sm-agency-fb.png"></img>
+					</a>
+					<p>Examines futuristic programming environments that is faciliated by natural interactions, 
+						including gestures, bio-sensing, and more...</p>
+					<div class="hidden-lg hidden-md">
+						<a href="./alt-code/">MORE</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+					<a href="./crowd-eco/">MORE</a>
+				</div>
+				<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+					<a href="./devops">MORE</a>
+				</div>
+				<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+					<a href="./alt-code/">MORE</a>
+				</div>
+			</div>
+		</div>
+
+		<hr/>
+
+		<div class="container">
+			<div class="row">
+
+
+				<div class="col-md-7 col-sm-12">
+					<h2>Publications</h2>
+
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+							<input type="radio" name="options" id="all" checked> ALL
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="brains"> Brains
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="crowds"> Crowds
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="data"> Data
+						</label>
+						<label class="btn btn-primary">
+							<input type="radio" name="options" id="interactions"> Interactions
+						</label>						
+					</div>
+
+					<p>Click to filter. Alternatively, see my publications on: <a href="http://scholar.google.com/citations?user=Guzbr0kAAAAJ">Google Scholar</a></p>
+
+					<div class="row" data-bind="template: { name: 'paper',foreach: filterPapers, as:'paper' }"></div>
+				</div>
+
+
+				<div class="col-md-offset-1 col-md-3">
+					<div class="row">
+						<h2>Teaching</h2>
+
+						<ul>
+							<li>Fall 2014: <a href="https://moodle1415-courses.wolfware.ncsu.edu/course/view.php?id=1460">CSC 510 - Software Engineering</a></li>
+							<li>Spring 2015: <a>CSC X - Dev Ops</a></li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<h2>Students and Collaborators</h2>
+
+						<h4>PhD</h4>
+						<ul>
+							<li>Anthony Elliott</a></li>
+							<li>Benjamin Dutton</li>
+							<li>Denae Ford</li>
+						</ul>
+
+						<h4>Masters</h4>
+						<ul>
+							<li>Saurabh Sarkar</li>
+						</ul>
+						<h4>Resources</h4>
+						<ul>
+							<li><a href="http://www.chrisparnin.me/docs/phd/Milestones.html">Milestones</a></li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<h2>Initiatives</h2>
+						<a href="http://checkbox.io">
+							<h4>checkbox.io</h4>
+						</a>
+					</div>
+
+
+				</div>
+
+				<!-- End row and container for all of pubs and sidebar -->
+			</div>
+		</div>
+
+		<hr/>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-inline">
+							<li class="pull-right"><a href="#top">Back to top</a></li>
+							<li><a href="/">HOME</a></li>
+							<li><a href="http://blog.ninlabs.com">Blog</a></li>
+							<li><a href="https://twitter.com/chrisparnin">Twitter</a></li>
+							<li><a href="https://github.com/chrisparnin">GitHub</a></li>
+						</ul>
+						<p>Based on Simplex bootstrap theme created by <a href="http://thomaspark.me" rel="nofollow">Thomas Park</a>.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

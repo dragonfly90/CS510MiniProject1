@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>YOUR SINGLE-PAGE APP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+
+                <script src="js/knockout.js"></script>
+                <script src="js/d3.js"></script>
+		
+	</head>
+
+
+<p>
+
+<style>
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+svg {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+}
+
+</style>
+<body>
+
+<script>
+
+var width = self.frameElement ? 960 : innerWidth,
+    height = self.frameElement ? 500 : innerHeight;
+
+var data = d3.range(50).map(function() { return [Math.random() * width, Math.random() * height]; });
+
+var color = d3.scale.category10();
+
+var drag = d3.behavior.drag()
+    .origin(function(d) { return {x: d[0], y: d[1]}; })
+    .on("dragstart", dragstarted)
+    .on("drag", dragged)
+    .on("dragend", dragended);
+
+d3.select("body")
+    .on("touchstart", nozoom)
+    .on("touchmove", nozoom)
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .selectAll("circle")
+    .data(data)
+  .enter().append("circle")
+    .attr("transform", function(d) { return "translate(" + d + ")"; })
+    .attr("r", 20)
+    .style("fill", function(d, i) { return color(i); })
+    .call(drag);
+
+function dragstarted() {
+  this.parentNode.appendChild(this);
+
+  d3.select(this).transition()
+      .ease("elastic")
+      .duration(500)
+      .attr("r", 40);
+}
+
+function dragged(d) {
+  d[0] = d3.event.x;
+  d[1] = d3.event.y;
+
+  d3.select(this)
+      .attr("transform", "translate(" + d + ")");
+}
+
+function dragended() {
+  d3.select(this).transition()
+      .ease("elastic")
+      .duration(500)
+      .attr("r", 30);
+}
+
+function nozoom() {
+  d3.event.preventDefault();
+}
+
+</script>
+
+
+</p>
+
+<div class="container">
+      <div class="page-header" id="banner"> 
+      <br>
+      <br>
+      <br>
+      <br>
+      	<div class="row">
+         	<div class="col-lg-6 col-md-6 col-sm-4">
+         		<h1>Content</h1>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+         		<h1>Template</h1>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-2">
+         		<h1>Header</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ 	
+	<div class="container">
+		<div class="row  ">
+			<div class="col-lg-10 col-lg-offset-1 col-sm-8 col-sm-offset-2" >
+				<div class=" well">
+					<p class="text-info lead">YOUR SINGLE-PAGE APP.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+<div class="container">
+
+<h2>Contact Information</h2>
+
+<div data-bind="template: { name: 'person-template', foreach: people }"></div>
+ 
+<script type="text/html" id="person-template">
+    <p><span data-bind="text: name"></span>: <span data-bind="text: information"></span></p>
+</script>
+ 
+</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="list-inline">
+						<li class="pull-right"><a href="#top">Back to top</a></li>
+						<li><a href="/">HOME</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    
+	
+
+ <script type="text/javascript">
+ function MyViewModel() {
+     this.people = [
+         { name: 'Github', information: 'dragonfly90' },
+         { name: 'Phone Number', information: '9195925125' }
+     ]
+ }
+ ko.applyBindings(new MyViewModel());
+</script>
+    
+
+
+
+
+</html>

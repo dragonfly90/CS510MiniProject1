@@ -1,0 +1,9 @@
+
+function MyViewModel() {
+     this.people = [
+         { name: 'Github', information: 'dragonfly90' },
+         { name: 'Phone Number', information: '9195925125' }
+     ]
+ }
+ ko.applyBindings(new MyViewModel());
+

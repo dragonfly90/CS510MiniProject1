@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Albers Projection</title>
+<style>
+
+path {
+  fill: #ccc;
+  stroke: #fff;
+}
+
+</style>
+<svg width="960" height="500"></svg>
+<script src="d3.js"></script>
+<script>
+
+d3.json("readme.json", function(collection) {
+  d3.select("svg").selectAll("path")
+      .data(collection.features)
+    .enter().append("path")
+      .attr("d", d3.geo.path().projection(d3.geo.albers()));
+});
+
+</script>
+
+
