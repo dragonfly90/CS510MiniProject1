@@ -1,2 +1,2 @@
-Software Engineering Mini Project
+Software Engineering Mini Project: One-page personal website
 
