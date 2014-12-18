@@ -47,7 +47,11 @@ Grading
 You will be graded on the configuration management of your app as well as your use of technology in building the app.
 
 10% bower setup
+
 40% grunt tasks
+
 20% app layout and content
+
 15% incorporate user input/dynamic content with knockoutjs
+
 15% incorporate visualization with d3
